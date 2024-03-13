@@ -7,14 +7,14 @@ metadata:
 spec:
   ingressClassName: "nginx"
   rules:
-      - host: myapp.k8s.local
-        http:
-          paths:
-            - backend:
-                service:
-                  name: my-cool-kustomize-application
-                  port:
-                    number: 8000
-              pathType: Prefix
-              path: /
+    - host: myapp.k8s.local
+      http:
+        paths:
+          - backend:
+              service:
+                name: my-cool-kustomize-application
+                port:
+                  number: 8000
+            pathType: Prefix
+            path: /
 
