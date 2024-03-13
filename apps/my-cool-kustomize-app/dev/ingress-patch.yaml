@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-cool-kustomize-application
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  ingressClassName: "nginx"
+  rules:
+    - host: myapp.dev.k8s.local
+      http:
+        paths:
+          - backend:
+              service:
+                name: my-cool-kustomize-application
+                port:
+                  number: 8000
+            pathType: Prefix
+            path: /

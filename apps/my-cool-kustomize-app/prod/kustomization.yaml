@@ -8,3 +8,6 @@ replicas:
 images:
   - name: localhost:32000/hello-world
     newTag: v1
+
+patchesStrategicMerge:
+  - ingress-patch.yaml
