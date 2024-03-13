@@ -4,7 +4,7 @@ resources:
 namePrefix: prod-
 replicas:
   - name: my-cool-kustomize-application
-    count: 15
+    count: 3
 images:
   - name: localhost:32000/hello-world
     newTag: v1
