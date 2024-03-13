@@ -1,3 +1,4 @@
 resources:
 - ../base
-- argo-cd-root-project.yaml
+- watch-managed-prod-apps.yaml
+- watch-self.yaml
