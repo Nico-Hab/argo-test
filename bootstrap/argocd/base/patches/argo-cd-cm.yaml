@@ -8,4 +8,4 @@ data:
   users.anonymous.enabled: 'false'
   url: "https://argo.k8s.local"
   accounts.dev_readonly: "login"
-  accounts.dev_readonly.enabled: "false"
+  accounts.dev_readonly.enabled: "true"
