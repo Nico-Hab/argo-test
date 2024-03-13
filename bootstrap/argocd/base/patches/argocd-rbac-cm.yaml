@@ -4,13 +4,13 @@ metadata:
   name: argocd-rbac-cm
 data:
   policy.csv: |
-    p, role:dev_read_sync, clusters, get, allow
-    p, role:dev_read_sync, applications, sync, allow
-    p, role:dev_read_sync, applications, get, allow
-    p, role:dev_read_sync, applicationsets, get, allow
-    p, role:dev_read_sync, logs, get, allow
-    p, role:dev_read_sync, projects, get, allow
-    p, role:dev_read_sync, repositories, get, allow
+    p, role:dev_read_sync, clusters, get, *, allow
+    p, role:dev_read_sync, applications, sync, *, allow
+    p, role:dev_read_sync, applications, get, *, allow
+    p, role:dev_read_sync, applicationsets, get, *, allow
+    p, role:dev_read_sync, logs, get, *, allow
+    p, role:dev_read_sync, projects, get, *, allow
+    p, role:dev_read_sync, repositories, get, *, allow
     
     g, dev_readonly, role:dev_read_sync
 
