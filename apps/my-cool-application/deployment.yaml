@@ -3,8 +3,14 @@ kind: Deployment
 metadata:
   name: my-cool-application
 spec:
+  selector:
+    matchLabels:
+      app: my-cool-application
   replicas: 2
   template:
+    metadata:
+      labels:
+        app: my-cool-application
     spec:
       containers:
         - name: my-cool-application
