@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-cool-kustomize-application
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+  selector:
+    app: my-cool-kustomize-application
