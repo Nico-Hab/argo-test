@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-cool-kustomize-application
+spec:
+  selector:
+    matchLabels:
+      app: my-cool-kustomize-application
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: my-cool-kustomize-application
+    spec:
+      containers:
+        - name: my-cool-kustomize-application
+          image: localhost:32000/hello-world:v1
