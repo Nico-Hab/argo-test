@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kustomize-app-prod
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: apps/my-cool-kustomize-app/prod
+    repoURL: https://github.com/Nico-Hab/argo-test.git
+    targetRevision: main
+  syncPolicy:
+    automated: {}
