@@ -14,7 +14,7 @@ spec:
     directory:
       jsonnet: {}
       recurse: true
-    path: apps/argocd-root/managed-apps/dev
+    path: apps/argocd-root/managed-apps/
     repoURL: https://github.com/Nico-Hab/argo-test.git
     targetRevision: main
   syncPolicy:
