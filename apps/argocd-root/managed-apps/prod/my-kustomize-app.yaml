@@ -15,4 +15,6 @@ spec:
     repoURL: https://github.com/Nico-Hab/argo-test.git
     targetRevision: main
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true

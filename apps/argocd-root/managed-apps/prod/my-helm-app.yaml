@@ -17,3 +17,7 @@ spec:
     path: apps/my-cool-helm-app
     repoURL: https://github.com/Nico-Hab/argo-test.git
     targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
