@@ -9,12 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    directory:
-      jsonnet: {}
-      recurse: true
     path: bootstrap/argocd/prod
     repoURL: https://github.com/Nico-Hab/argo-test.git
     targetRevision: main
-  syncPolicy:
-    automated:
-      prune: true
