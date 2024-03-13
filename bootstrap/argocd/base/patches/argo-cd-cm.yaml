@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
-  admin.enabled: 'true'
+  admin.enabled: 'false'
   statusbadge.enabled: 'false'
   users.anonymous.enabled: 'false'
   url: "https://argo.k8s.local"
