@@ -7,4 +7,5 @@ resources:
 - ingress.yaml
 
 patches:
-- path: argo-cd-cm.yaml
+- path: patches/argo-cd-cm.yaml
+- path: patches/argocd-secret.yaml
