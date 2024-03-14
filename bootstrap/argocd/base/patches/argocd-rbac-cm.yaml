@@ -13,7 +13,7 @@ data:
     p, role:dev_read_sync, repositories, get, *, allow
     
     g, dev_readonly, role:dev_read_sync
-    g, org:argocd-test-org, role:dev_read_sync
+    g, argocd-test-org, role:dev_read_sync
 
 
   # policy.default is the name of the default role which Argo CD will falls back to, when
