@@ -16,7 +16,7 @@ data:
       id: github
       name: GitHub
       config:
-        clientID: 009f1a415c23fdb663c4
+        clientID: 69c5da1af0e6ff0ed814
         clientSecret: $github-client-secret:dex.github.clientSecret
         orgs:
         - name: argocd-test-org
