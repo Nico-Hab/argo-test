@@ -4,10 +4,10 @@ resources:
 namePrefix: prod-
 replicas:
   - name: my-cool-kustomize-application
-    count: 1
+    count: 5
 images:
   - name: localhost:32000/hello-world
-    newTag: v1
+    newTag: lain2
 
 patchesStrategicMerge:
   - ingress-patch.yaml
