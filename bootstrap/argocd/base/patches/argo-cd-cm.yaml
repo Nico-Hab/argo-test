@@ -20,3 +20,5 @@ data:
         clientSecret: $github-client-secret:dex.github.clientSecret
         orgs:
         - name: argocd-test-org
+        loadAllGroups: false
+    
