@@ -7,7 +7,7 @@ replicas:
     count: 2
 images:
   - name: localhost:32000/hello-world
-    newTag: lain
+    newTag: lain2
 
 patchesStrategicMerge:
   - ingress-patch.yaml
