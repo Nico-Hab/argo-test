@@ -18,5 +18,5 @@ data:
       config:
         clientID: 009f1a415c23fdb663c4
         clientSecret: $github-client-secret:dex.github.clientSecret
-#        orgs:
-#        - name: Nico-Hab
+        orgs:
+        - name: argocd-test-org
