@@ -9,3 +9,14 @@ data:
   url: "https://argo.k8s.local"
   accounts.dev_readonly: "login"
   accounts.dev_readonly.enabled: "true"
+  dex.config: |
+    connectors:
+    # GitHub example
+    - type: github
+      id: github
+      name: GitHub
+      config:
+        clientID: 009f1a415c23fdb663c4
+        clientSecret: $github-client-secret:dex.github.clientSecret
+        orgs:
+        - name: Nico-Hab
