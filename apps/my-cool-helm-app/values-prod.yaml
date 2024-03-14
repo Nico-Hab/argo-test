@@ -8,7 +8,7 @@ image:
   repository: localhost:32000/hello-world
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "lain"
+  tag: "v1"
 
 imagePullSecrets: []
 nameOverride: ""
