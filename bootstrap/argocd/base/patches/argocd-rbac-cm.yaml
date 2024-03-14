@@ -15,6 +15,7 @@ data:
     g, dev_readonly, role:dev_read_sync
     g, argocd-test-org, role:dev_read_sync
     g, argocd-test-org:*, role:dev_read_sync
+    g, argocd-test-org:argo-access, role:dev_read_sync
     g, org:argocd-test-org, role:dev_read_sync
     g, org:argocd-test-org:*, role:dev_read_sync
 
